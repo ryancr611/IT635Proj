@@ -2,7 +2,7 @@
 require('DatabaseLogin.php');
 
 
-$sql ="Select Plant_Name, SOLD, ID FROM Plants ORDER BY SOLD DESC";
+$sql ="Select Plant_Name, SOLD, ID FROM Plants ORDER BY SOLD DESC LIMIT 5";
 echo "Top 5 Plants Sold";
 echo "<br>";
 if ($conn->query($sql) == TRUE) {
@@ -21,7 +21,7 @@ if ($conn->query($sql) == TRUE) {
 	echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-$sql ="Select Plant_Name, SOLD, ID FROM Plants ORDER BY SOLD ASC";
+$sql ="Select Plant_Name, SOLD, ID FROM Plants ORDER BY SOLD ASC LIMIT 5";
 echo "Lowest Sold Plants";
 echo "<br>";
 if ($conn->query($sql) == TRUE) {
