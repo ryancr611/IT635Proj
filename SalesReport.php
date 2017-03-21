@@ -20,7 +20,10 @@ if ($conn->query($sql) == TRUE) {
  else {
 	echo "Error: " . $sql . "<br>" . $conn->error;
 }
-
+echo "_______________________________________________________________";
+echo "<br>";
+echo "<br>";
+echo "<br>";
 $sql ="Select Plant_Name, SOLD, ID FROM Plants ORDER BY SOLD ASC LIMIT 5";
 echo "Lowest Sold Plants";
 echo "<br>";
