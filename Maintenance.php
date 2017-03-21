@@ -1,7 +1,7 @@
 <?php
 require('DatabaseLogin.php');
 
-$sql ="Select Plant_Name,ID, MAINTENANCE FROM Plants Where IN_Stock > 0";
+$sql ="Select Plant_Name, ID, LOCATION, MAINTENANCE FROM Plants Where IN_Stock > 0";
 
 if ($conn->query($sql) == TRUE) {
 	$result = $conn->query($sql);
@@ -9,6 +9,7 @@ if ($conn->query($sql) == TRUE) {
 	while($row = $result->fetch_assoc()) {
 	echo 'ID: ' .$row["ID"]."<br>";
 	echo 'Plant: ' .$row["Plant_Name"]."<br>";
+	echo 'Location: ' .$row["LOCATION"]."<br>";
 	echo 'Schedule: ' .$row["MAINTENANCE"]."<br>";
 	echo "<br>"; 
 }
