@@ -4,6 +4,8 @@ $table_user = "";
 $table_pass = "";
 $username = ($_POST['username']);
 $password = ($_POST['password']);
+$hash = hash('sha256',$password);
+
 
 
 $sql = "Select Username, Password From Admin";
@@ -18,7 +20,7 @@ if ($conn->query($sql) == TRUE) {
 		$table_pass = $row['Password'];
 	}
 	
-	if(($username == $table_user) && ($password == $table_pass))
+	if(($username == $table_user) && ($hash == $table_pass))
 	{
 	header("location: home.html");
 	}
