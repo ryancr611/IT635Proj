@@ -3,7 +3,7 @@
 require('DatabaseLogin.php');
 
 $sql = "INSERT INTO Care(ID, Plant_Name, Care)
-VALUES ('1', 'Arbor Vitae', 'After planting, create a water basin by making a ridge of soil around the outer circumference of the planting hole. Make the ridge about 3 inches high. Once you've created the ridge, cover the ground around the arborvitae with 2 to 3 inches of mulch, such as pine needles or bark chips. Mulch keeps the soil moist and helps maintain an even temperature around the roots. To prevent rot that often results from mulch piling up against the trunk, leave a 3- to 4-inch span unmulched. Water the arborvitae regularly throughout the first year. Provide enough water to soak the root zone, and then allow the top few inches of soil to dry before watering again.')";
+VALUES ('15', 'Cypress', 'Young outdoor cypress trees will need supplemental watering during dry weather. It is best to stop watering them if the ground freezes. Weeding near cypress trees helps their overall health because they do not have to compete for water and nutrients. Leyland cypress tolerates heavy trimming, so you can shape it into a hedge or windscreen. In very windy areas, such as areas near the coast, you can prevent wind damage by wrapping the trees in burlap when a storm is on the way.')";
 
 if ($conn->query($sql) == TRUE) {
 	echo "New record made";
