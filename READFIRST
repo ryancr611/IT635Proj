@@ -1,0 +1,18 @@
+Please Start the LoginPage.html first.
+Username = Admin
+Password = password
+
+I have included a short video demonstrating my mysql replication between a master and slave.
+
+Common Final Deliverables
+1) Password Hashing - Look inside login.php file. I have used Sha256 to complete the task and same applies to the table in the database
+2) M/S replication - Shown in video
+3) Mongodb - Not completed
+
+Final Deliverables
+
+1) Add Care instructions for each plant species - I have included the information in the database and it is accesable from the homepage on the html form. Simply clicking the button under the buyer care plan allows you to see the instructions for each plant.
+
+2) Allow customers to build a shopping cart for small or bulk orders - Basically at the bottom of the html form there are a bunc of textboxes which represent how many items you want to purhcase of each plant. Once you have specified the amount for each click the button and it will tell you the amount and also generate a list of care instructions based on what you bought.
+
+3) After purhcasing the items like in the second deliverable it will display the care isntructions. 
