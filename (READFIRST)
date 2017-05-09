@@ -6,7 +6,7 @@ I have included a short video demonstrating my mysql replication between a maste
 
 Common Final Deliverables
 1) Password Hashing - Look inside login.php file. I have used Sha256 to complete the task and same applies to the table in the database
-2) M/S replication - Shown in video
+2) M/S replication - Shown in video Replication.mkv
 3) Mongodb - Not completed
 
 Final Deliverables
